@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Single source of truth (HRIS, ATS, LMS, etc.) built for the C-Suite. Best in class dashboards and advanced analytics dashboards all in one."
+    />
+    <meta
+      property="og:title"
+      content="Twine Labs | Advanced People Analytics"
+    />
+    <meta
+      property="og:description"
+      content="Single source of truth (HRIS, ATS, LMS, etc.) built for the C-Suite. Best in class dashboards and advanced analytics dashboards all in one."
+    />
+    <meta
+      property="og:image"
+      content="/public/assets/images/home-screen1.png"
+    />
+    <meta
+      property="twitter:card"
+      content="/public/assets/images/home-screen1.png"
+    />
+
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+        Notice the use of %PUBLIC_URL% in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+      -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <title>Twine | Advanced People Analytics</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-147878102-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-147878102-1");
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script type="text/javascript">
+      _linkedin_partner_id = "1831969";
+      window._linkedin_data_partner_ids =
+        window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+      (function() {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";
+        b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+      })();
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none;"
+        alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=1831969&fmt=gif"
+      />
+    </noscript>
+  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://boards.greenhouse.io/embed/job_board/js?for=twinelabs"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var shrinkHeader = 10;
+      var box1 = 200;
+      var box2 = 300;
+      var box3 = 500;
+      var box4 = 700;
+      var box5 = 800;
+      var box6 = 1000;
+      $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+        if (scroll >= shrinkHeader) {
+          $("body").addClass("scrolled");
+        } else {
+          $("body").removeClass("scrolled");
+        }
+        if (scroll >= box1) {
+          $(".box1").addClass("box-active");
+          $("#leftgear").addClass("rotate1");
+        }
+        if (scroll >= box2) {
+          $(".box2").addClass("box-active");
+          $("#leftgear").addClass("rotate2");
+        }
+        if (scroll >= box3) {
+          $(".box3").addClass("box-active");
+          $("#leftgear").addClass("rotate3");
+        }
+        if (scroll >= box4) {
+          $(".box4").addClass("box-active");
+          $("#leftgear").addClass("rotate4");
+        }
+        if (scroll >= box5) {
+          $(".box5").addClass("box-active");
+          $("#leftgear").addClass("rotate5");
+        }
+        if (scroll >= box6) {
+          $("#leftgear").addClass("rotate6");
+        }
+      });
+      function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+      }
+
+      $("body").on("click", ".navbar-toggler", function() {
+        $(this).toggleClass("toggle");
+      });
+
+      $("#hide").hide();
+      $("body").on("click", "#show", function() {
+        $("#less").slideDown();
+        $(this).hide();
+        $("#hide").show();
+      });
+      $("body").on("click", "#hide", function() {
+        $("#less").slideUp();
+        $(this).hide();
+        $("#show").show();
+      });
+
+      $(".nav-item a").on("click", function() {
+        $(window).scrollTop(0);
+      });
+    });
+
+    function openCity(evt, cityName) {
+      console.log(cityName);
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    $("body").on("mouseover", ".tablinks", function(e) {
+      var sec = $(this).attr("section");
+      openCity(e, sec);
+    });
+
+    new WOW().init();
+  </script>
+</html>

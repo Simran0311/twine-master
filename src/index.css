@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* @media only screen and (min-width: 200px) and (max-width: 767px) {
+  .image-carousel {
+    width: 500px !important;
+    height: 170px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .image-carousel {
+    width: 500px !important;
+    height: 270px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1170px) {
+  .image-carousel {
+    width: 500px !important;
+    height: 238px !important;
+  }
+}
+
+@media only screen and (min-width: 1171px) and (max-width: 1299px) {
+  .image-carousel {
+    width: 500px !important;
+    height: 290px !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .image-carousel {
+    width: 500px !important;
+    height: 310px !important;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1699px) {
+  .image-carousel {
+    width: 700px !important;
+    height: 350px !important;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .image-carousel {
+    width: 700px !important;
+    height: 400px !important;
+  }
+} */
+
+@media only screen and (min-width: 1100px) {
+  .ceo-quote-home-right {
+    padding-right: 250px;
+  }
+
+  .ceo-quote-home-left {
+    padding-left: 250px;
+  }
+}
+
+.theme-btn-blue:hover,
+.theme-btn-white:hover {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: #4267b2 !important;
+  border-color: #4267b2 !important;
+  outline: none !important;
+}
